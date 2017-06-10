@@ -1,9 +1,9 @@
 language: python
 python:
   - "3.6"
+cache: pip
 install: "pip install requests"
 script: python make.py
-after_script: echo -e "// Last Modified: $(date -R)\n"$(cat proxy.pac) > proxy.pac
 deploy:
   provider: pages
   skip_cleanup: true
