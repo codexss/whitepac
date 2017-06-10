@@ -2,7 +2,7 @@ language: python
 python:
   - "nightly"
 install: "pip install requests"
-script: make.py
+script: python make.py
 deploy:
   provider: pages
   skip_cleanup: true
