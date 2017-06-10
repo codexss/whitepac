@@ -2,7 +2,7 @@ language: python
 python:
   - "3.6"
 install: "pip install requests"
-script: python make.py && echo -e "// Last Modified: $(date -R)\n"$(cat proxy.pac) > proxy.pac
+script: python make.py && echo -e "// Last Modified\: $(date -R)\n"$(cat proxy.pac) > proxy.pac
 deploy:
   provider: pages
   skip_cleanup: true
