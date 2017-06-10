@@ -1,0 +1,15 @@
+language: python
+
+python:
+  - "nightly"
+
+  install: "pip install requests"
+
+script: make.py
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
