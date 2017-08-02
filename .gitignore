@@ -1,4 +1,5 @@
 *.txt
 *.py
-tmpl.pac
 .travis.yml
+.gitignore
+tmpl.pac
